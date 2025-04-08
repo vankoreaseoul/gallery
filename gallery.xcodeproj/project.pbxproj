@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC5FE5532DA0299E000E8EBA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC5FE5522DA0299E000E8EBA /* Kingfisher */; };
+		DC9497D42D9E75A30008065F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC9497D32D9E75A30008065F /* Alamofire */; };
+		DC9497E12D9E89290008065F /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = DC9497E02D9E89290008065F /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DC9497A22D9E4D7E0008065F /* gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5FE5532DA0299E000E8EBA /* Kingfisher in Frameworks */,
+				DC9497D42D9E75A30008065F /* Alamofire in Frameworks */,
+				DC9497E12D9E89290008065F /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = gallery;
 			packageProductDependencies = (
+				DC9497D32D9E75A30008065F /* Alamofire */,
+				DC9497E02D9E89290008065F /* Swinject */,
+				DC5FE5522DA0299E000E8EBA /* Kingfisher */,
 			);
 			productName = gallery;
 			productReference = DC9497A22D9E4D7E0008065F /* gallery.app */;
@@ -94,6 +106,11 @@
 			);
 			mainGroup = DC9497992D9E4D7E0008065F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DC9497D22D9E75A30008065F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DC9497DF2D9E89280008065F /* XCRemoteSwiftPackageReference "Swinject" */,
+				DC5FE5512DA0299E000E8EBA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC9497A32D9E4D7E0008065F /* Products */;
 			projectDirPath = "";
@@ -258,8 +275,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,8 +306,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +345,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC5FE5512DA0299E000E8EBA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.1;
+			};
+		};
+		DC9497D22D9E75A30008065F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		DC9497DF2D9E89280008065F /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC5FE5522DA0299E000E8EBA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC5FE5512DA0299E000E8EBA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DC9497D32D9E75A30008065F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC9497D22D9E75A30008065F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DC9497E02D9E89290008065F /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC9497DF2D9E89280008065F /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC94979A2D9E4D7E0008065F /* Project object */;
 }

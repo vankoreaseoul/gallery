@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct galleryApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhotoListView()
         }
     }
+    
 }

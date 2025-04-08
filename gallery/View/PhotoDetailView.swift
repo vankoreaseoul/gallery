@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct PhotoDetailView: View {
+    
+    @ObservedObject var vm: PhotoDetailVM
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(spacing: 20) {
+            ZoomAndRotateView(image: vm.image)
+                .background(Color.gray.opacity(0.2))
+            
+            Toggle("흑백", isOn: $vm.isBlackAndWhiteApplied)
+                .padding()
+            
+            Spacer()
+            
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 32)
+        
+        
     }
 }
 
 #Preview {
-    PhotoDetailView()
+    PhotoDetailView(vm: PhotoDetailVM(image: UIImage(), isBlackAndWhiteApplied: false))
 }

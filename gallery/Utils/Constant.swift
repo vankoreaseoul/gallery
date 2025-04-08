@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let SERVICE_URL = "https://picsum.photos"

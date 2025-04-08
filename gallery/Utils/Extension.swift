@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 extension AFError {
     func getMessage() -> String {
@@ -27,9 +28,15 @@ extension AFError {
         case .explicitlyCancelled, .downloadedFileMoveFailed:
             return "요청이 취소되었습니다."
 
-        // 기본값 (예상치 못한 오류)
+        // 예상치 못한 오류
         default:
-            return "알 수 없는 오류가 발생했습니다. 문제가 지속되면 고객센터로 문의해주세요."
+            return "알 수 없는 오류가 발생했습니다."
         }
+    }
+}
+
+extension UIApplication {
+    func keyboardDismiss() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
