@@ -40,7 +40,8 @@ Apply real-time black-and-white image processing using Core Image.<br>
 ![Simulator Screen Recording - iPhone 16 - 2025-04-09 at 14 19 41](https://github.com/user-attachments/assets/3d4daa69-b265-4e2d-b5be-c4d2f3936626)
 
 * **Pinch and Rotation Gestures**<br>
-Zoom in/out and rotate images using multi-touch gestures (via UIKit integration).
+Zoom in/out and rotate images using multi-touch gestures (via UIKit integration).<br>
+![Simulator Screen Recording - iPhone 16 - 2025-04-09 at 14 29 27](https://github.com/user-attachments/assets/d73648e2-6cdf-48cd-84dc-20b2937c5a43)
 
 ## Architecture
 ```
