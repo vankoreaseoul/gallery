@@ -31,10 +31,12 @@ Gallery is an iOS app which utilizes a public image API(https://picsum.photos/v2
 Search for images using filters such as id, author, width, and height.
 
 * **Image Listing and Detail View**<br>
-Display search results in a scrollable list and view selected image in detail.
+Display search results in a scrollable list and view selected image in detail.<br>
+![Simulator Screen Recording - iPhone 16 - 2025-04-09 at 14 17 51](https://github.com/user-attachments/assets/0aa7af6d-e7bb-4497-8708-0cae6d6a98d2)
 
 * **Black & White Filter**<br>
-Apply real-time black-and-white image processing using Core Image.
+Apply real-time black-and-white image processing using Core Image.<br>
+![Simulator Screen Recording - iPhone 16 - 2025-04-09 at 14 19 41](https://github.com/user-attachments/assets/3d4daa69-b265-4e2d-b5be-c4d2f3936626)
 
 * **Pinch and Rotation Gestures**<br>
 Zoom in/out and rotate images using multi-touch gestures (via UIKit integration).
