@@ -39,6 +39,46 @@ Apply real-time black-and-white image processing using Core Image.
 * **Pinch and Rotation Gestures**<br>
 Zoom in/out and rotate images using multi-touch gestures (via UIKit integration).
 
+## Architecture
+```
+gallery
+├── Data
+│   ├── Model
+│   │     └── Photo
+│   └── Remote
+│         └── PhotoApi
+├── Service
+│     ├── ApplyBlackAndWhiteOnPhotoService
+│     ├── GetImageService
+│     ├── GetPhotoListService
+│     └── SearchPhotoListService
+├── Usecase
+│     ├── StartAppUsecase
+│     ├── TurnOnOffBlackAndWhiteToggleUsecase
+│     └── WriteTextOnSearchBarUsecase
+├── Utils
+│     ├── ApiManager
+│     ├── Constant
+│     └── Extension
+├── View
+│     ├── AlertView
+│     ├── PhotoDetailView
+│     ├── PhotoListCellView
+│     ├── PhotoListView
+│     ├── SearchBarView
+│     ├── SpinnerView
+│     └── ZoomAndRotateView
+├── ViewModel
+│     ├── PhotoDetailVM
+│     ├── PhotoListCellVM
+│     └── PhotoListVM
+├── DependencyInjectionContainer
+├── galleryApp
+├── Assets
+└── LaunchScreen
+```
+
+
 
 
 ## Getting Started
