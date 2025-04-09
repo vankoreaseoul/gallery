@@ -21,6 +21,26 @@ Gallery is an iOS app which utilizes a public image API(https://picsum.photos/v2
 ### Dependency Management
 ![SPM](https://img.shields.io/badge/Swift_Package_Manager-444444?style=for-the-badge&logo=swift&logoColor=white)
 
+## UI Overview
+| List | Detail |
+|------------|--------|
+| <img src="https://github.com/user-attachments/assets/8ad04d7c-c8bb-4cb9-a29c-902ffc9725e0" width="200"/> | <img src="https://github.com/user-attachments/assets/7b1b001d-d9c0-4dd2-861a-de68a5c96b08" width="200"/> |
+
+## Features
+* **Image Search**<br>
+Search for images using filters such as id, author, width, and height.
+
+* **Image Listing and Detail View**<br>
+Display search results in a scrollable list and view selected image in detail.
+
+* **Black & White Filter**<br>
+Apply real-time black-and-white image processing using Core Image.
+
+* **Pinch and Rotation Gestures**<br>
+Zoom in/out and rotate images using multi-touch gestures (via UIKit integration).
+
+
+
 ## Getting Started
 ### Requirements 
 * **Xcode 15 or later**
