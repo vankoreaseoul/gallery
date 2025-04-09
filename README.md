@@ -110,4 +110,6 @@ To run this project locally, follow these steps:
 |-------|-------|
 | **Kingfisher** | Chosen for its efficient image caching capabilities. It automatically handles both memory and disk caching, reducing the need for manual cache management. |
 | **Alamofire** | Used to simplify the handling of complex HTTP requests and responses. |
+| **Swinject** | Selected to apply dependency injection and separation of concerns within the app architecture. |
+| **CoreImage** | Utilized for applying image filters, such as converting images to grayscale, using optimized native APIs. |
 
