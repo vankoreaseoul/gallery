@@ -41,6 +41,11 @@ class DependencyInjectionContainer {
         }
         .inObjectScope(.container)
         
+        container.register(SaveImageService.self) { _ in
+            SaveImageService()
+        }
+        .inObjectScope(.container)
+        
         container.register(StartAppUsecase.self) { _ in
             StartAppUsecaseImpl()
         }

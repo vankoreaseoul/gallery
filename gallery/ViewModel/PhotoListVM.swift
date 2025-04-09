@@ -93,7 +93,7 @@ class PhotoListVM: ObservableObject {
                         break
                     }
                 } receiveValue: { [weak self] image in
-                    if let hasImage = image { self?.images[photo.id!] = hasImage }
+                    if let hasImage = image, let id = photo.id { self?.images[id] = hasImage }
                     self?.downloadedPhotos.append(photo)
                 }
                 .store(in: &cancellables)
@@ -107,12 +107,14 @@ class PhotoListVM: ObservableObject {
                                  }
         
         guard !photosToRedownload.isEmpty else {
+            corePhotos.sort(by: { Int($0.id!) ?? 0 < Int($1.id!) ?? 0 })
             
             DispatchQueue.main.async { [weak self] in
-                self?.corePhotos.sort(by: { Int($0.id!) ?? 0 < Int($1.id!) ?? 0 }) 
                 self?.photos = self?.corePhotos ?? []
                 self?.isLoading = false
             }
+            
+            startAppUsecase.saveImages(images: images)
             
             return
         }

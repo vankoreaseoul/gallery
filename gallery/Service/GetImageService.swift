@@ -58,14 +58,8 @@ class GetImageService {
             .publishData()
             .value()
             .receive(on: DispatchQueue.global(qos: .background))
-            .map { [weak self] data in
-                let image = UIImage(data: data)
-                
-                if let hasImage = image {
-                    self?.cache.store(hasImage, forKey: id)
-                }
-                
-                return image
+            .map { data in
+                return UIImage(data: data)
             }
             .eraseToAnyPublisher()
     }
