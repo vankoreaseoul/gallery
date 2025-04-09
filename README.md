@@ -1,8 +1,28 @@
 # <img src="https://github.com/user-attachments/assets/b6c5a777-62af-42ec-b055-824f69082ae0" width="30" height="30"/> Gallery
 Gallery is an iOS app which utilizes a public image API(https://picsum.photos/v2/list) to display images in both list and detail view. Users can search, apply grayscale filters to images, and perform zoom and rotation gestures.
 
+## Development Info
+* Developer: Heawon Seo
+* Development Period: 03 April 2025 – 06 April 2025
+
+## Tech Stack
+### Language
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+### Framework
+![SwiftUI](https://img.shields.io/badge/SwiftUI-0C1E2C?style=for-the-badge&logo=swift&logoColor=white)
+![Combine](https://img.shields.io/badge/Combine-1C1C1E?style=for-the-badge&logo=apple&logoColor=white)
+### Architecture
+![MVVM](https://img.shields.io/badge/MVVM-blueviolet?style=for-the-badge)
+### Library
+[![Alamofire](https://img.shields.io/badge/ALAMOFIRE-EE4B2B?style=flat&logo=swift&logoColor=white)](https://github.com/Alamofire/Alamofire)
+[![Kingfisher](https://img.shields.io/badge/KINGFISHER-007ACC?style=flat&logo=swift&logoColor=white)](https://github.com/onevcat/Kingfisher)
+[![CoreImage](https://img.shields.io/badge/COREIMAGE-228B22?style=flat&logo=apple&logoColor=white)](https://developer.apple.com/documentation/coreimage)
+[![Swinject](https://img.shields.io/badge/SWINJECT-6A5ACD?style=flat&logo=swift&logoColor=white)](https://github.com/Swinject/Swinject)
+### Dependency Management
+![SPM](https://img.shields.io/badge/Swift_Package_Manager-444444?style=for-the-badge&logo=swift&logoColor=white)
+
 ## Getting Started
-### Requirements ###
+### Requirements 
 * **Xcode 15 or later**
 <br>The project leverages the latest Swift and SwiftUI features, including improved NavigationStack, navigationDestination, and enhanced developer tools available in Xcode 15.
 
