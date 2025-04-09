@@ -82,9 +82,6 @@ gallery
 └── LaunchScreen
 ```
 
-
-
-
 ## Getting Started
 ### Requirements 
 * **Xcode 15 or later**
@@ -107,3 +104,10 @@ To run this project locally, follow these steps:
 
 6. **Build and run the app**
 <br>Select a simulator or your device, then press Cmd + R to build and launch the app.
+
+## Adopted Libraries & Purpose
+|       |       |
+|-------|-------|
+| **Kingfisher** | Chosen for its efficient image caching capabilities. It automatically handles both memory and disk caching, reducing the need for manual cache management. |
+| **Alamofire** | Used to simplify the handling of complex HTTP requests and responses. |
+
