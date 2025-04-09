@@ -28,7 +28,8 @@ Gallery is an iOS app which utilizes a public image API(https://picsum.photos/v2
 
 ## Features
 * **Image Search**<br>
-Search for images using filters such as id, author, width, and height.
+Search for images using filters such as id, author, width, and height.<br>
+![Simulator Screen Recording - iPhone 16 - 2025-04-09 at 14 23 45](https://github.com/user-attachments/assets/1398198c-e5bc-40f8-989d-641d3b57841c)
 
 * **Image Listing and Detail View**<br>
 Display search results in a scrollable list and view selected image in detail.<br>
