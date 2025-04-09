@@ -55,6 +55,7 @@ gallery
 │     ├── ApplyBlackAndWhiteOnPhotoService
 │     ├── GetImageService
 │     ├── GetPhotoListService
+│     ├── SaveImageService
 │     └── SearchPhotoListService
 ├── Usecase
 │     ├── StartAppUsecase
